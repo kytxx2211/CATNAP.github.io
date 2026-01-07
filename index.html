@@ -5,7 +5,7 @@
   <title>Saki Arigato</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- OG -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Saki Arigato" />
   <meta property="og:description" content="Illustration, character, and visual storytelling." />
   <meta property="og:image" content="og.png" />
@@ -17,55 +17,71 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #0f0f10;
       color: #eaeaea;
-      line-height: 1.7;
+      line-height: 1.9;
+      letter-spacing: 0.2px;
     }
 
     .wrap {
-      max-width: 760px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 96px 24px;
+      padding: 120px 24px 160px;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 42px;
       font-weight: 600;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      letter-spacing: -0.03em;
     }
 
     p {
       font-size: 16px;
-      color: #bdbdbd;
-      margin-bottom: 20px;
+      color: #c9c9c9;
+      margin-bottom: 28px;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 24px 0 40px;
+      opacity: 0.95;
     }
 
     .section {
-      margin-top: 72px;
+      margin-top: 88px;
     }
 
     .status {
       font-size: 14px;
       color: #9aa0a6;
-      margin-top: 32px;
+      margin-top: 56px;
     }
 
     footer {
-      margin-top: 120px;
+      margin-top: 160px;
       font-size: 13px;
-      color: #666;
+      color: #6f6f6f;
     }
   </style>
 </head>
 
 <body>
   <main class="wrap">
+
+    <!-- Avatar -->
+    <img src="avatar.png" alt="Saki Arigato" class="avatar" />
+
+    <!-- Title -->
     <h1>Saki Arigato</h1>
 
+    <!-- Intro -->
     <p>
       ที่นี่คือพื้นที่ทำงานของฉัน<br/>
-      สำหรับภาพ ตัวละคร และไอเดียที่ค่อย ๆ เติบโต
+      สำหรับภาพ ตัวละคร และการเล่าเรื่องด้วยภาพ
     </p>
 
+    <!-- About -->
     <div class="section">
       <p>
         ฉันชอบทำงานในบรรยากาศเงียบ ๆ<br/>
@@ -78,13 +94,17 @@
       </p>
     </div>
 
-    <div class="section status">
-      Currently open for selected projects.
+    <!-- Status / Contact -->
+    <div class="status">
+      Currently open for selected projects.<br/>
+      หากสนใจร่วมงาน สามารถติดต่อเพื่อพูดคุยรายละเอียดเพิ่มเติมได้
     </div>
 
+    <!-- Footer -->
     <footer>
       ขอบคุณที่แวะมาดูงานของฉัน
     </footer>
+
   </main>
 </body>
 </html>
