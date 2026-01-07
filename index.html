@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
-  .avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 24px auto;
-  display: block;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
+  
 <head>
   <meta charset="UTF-8" />
   <title>Saki Arigato</title>
@@ -58,7 +49,20 @@
       margin: 24px 0 40px;
       opacity: 0.95;
     }
+    .avatar {
+  animation: fadeIn 1.2s ease-out forwards;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
     .section {
       margin-top: 88px;
     }
@@ -81,13 +85,10 @@
   <main class="wrap">
 
     <!-- Avatar -->
-    <img src="avatar.png" alt="Saki Arigato" class="avatar" />
+    <img src="saki-avatar.png" alt="Saki Arigato" class="avatar">
 
-    <!-- Title -->
-    <h1>Saki Arigato</h1>
-
-    <!-- Intro -->
-    <p>
+  <h1>Saki Arigato</h1>
+  <p>พื้นที่ทำงานของฉัน สำหรับภาพ ตัวละคร และการเล่าเรื่องด้วยภาพ</p>
       ที่นี่คือพื้นที่ทำงานของฉัน<br/>
       สำหรับภาพ ตัวละคร และการเล่าเรื่องด้วยภาพ
     </p>
