@@ -2,173 +2,212 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <title>CATNAP Studio — Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saki Arigato — Resume | CATNAP Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+    :root {
+      --bg: #0f0f10;
+      --panel: #161616;
+      --text: #eaeaea;
+      --muted: #9a9a9a;
+      --accent: #cfcfcf;
+    }
+
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
+      background: radial-gradient(circle at top, #1b1b1b, var(--bg));
+      color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0f0f10;
-      color: #eaeaea;
-      line-height: 1.9;
+      line-height: 1.7;
     }
 
-    .wrap {
-      max-width: 760px;
+    .container {
+      max-width: 900px;
       margin: 0 auto;
       padding: 120px 24px 160px;
     }
 
-    /* Avatar */
+    header {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 32px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
     .avatar {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      overflow: hidden;
-      margin-bottom: 32px;
-      background: #1a1a1a;
-    }
-
-    .avatar img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
+      box-shadow: 0 16px 32px rgba(0,0,0,0.6);
     }
 
     h1 {
       font-size: 36px;
-      font-weight: 600;
-      letter-spacing: -0.03em;
       margin: 0 0 8px;
     }
 
     .role {
-      font-size: 14px;
-      color: #9aa0a6;
-      margin-bottom: 40px;
+      font-size: 15px;
+      color: var(--muted);
     }
 
-    p {
-      font-size: 15px;
-      color: #cfcfcf;
-      margin-bottom: 20px;
+    section {
+      margin-bottom: 72px;
     }
 
     h2 {
-      font-size: 18px;
-      font-weight: 500;
-      margin-top: 72px;
+      font-size: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 0.4px;
+    }
+
+    .block {
+      background: var(--panel);
+      padding: 28px;
+      border-radius: 16px;
       margin-bottom: 20px;
-      color: #ffffff;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: #d6d6d6;
+      font-size: 15px;
     }
 
     ul {
+      margin: 0;
       padding-left: 18px;
     }
 
     li {
-      font-size: 15px;
+      margin-bottom: 10px;
+      color: #d0d0d0;
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 6px 6px 0 0;
+      font-size: 12px;
+      border-radius: 999px;
+      background: #222;
       color: #cfcfcf;
-      margin-bottom: 12px;
     }
 
-    .note {
-      font-size: 14px;
-      color: #9aa0a6;
-      margin-top: 32px;
+    .footer {
+      text-align: center;
+      margin-top: 120px;
+      font-size: 13px;
+      color: var(--muted);
     }
 
-    .back {
-      margin-top: 96px;
-      font-size: 14px;
-    }
-
-    .back a {
-      color: #9aa0a6;
+    a {
+      color: var(--accent);
       text-decoration: none;
+      opacity: 0.8;
     }
 
-    .back a:hover {
-      color: #ffffff;
+    a:hover {
+      opacity: 1;
     }
   </style>
 </head>
 
 <body>
-  <main class="wrap">
+  <main class="container">
 
-    <!-- Avatar -->
-    <div class="avatar">
-      <img src="avatar.png" alt="CATNAP Studio Avatar">
-    </div>
-
-    <!-- Title -->
-    <h1>CATNAP Studio</h1>
-    <div class="role">
-      Illustration / Character / Visual Storytelling
-    </div>
+    <!-- Header -->
+    <header>
+      <img src="saki-avatar.png" alt="Saki Avatar" class="avatar" />
+      <div>
+        <h1>Saki Arigato</h1>
+        <div class="role">
+          Visual Artist / Character Designer  
+          <br/>CATNAP Studio — Game & Narrative Focus
+        </div>
+      </div>
+    </header>
 
     <!-- Profile -->
-    <p>
-      CATNAP Studio เป็นสตูดิโออิสระที่ทำงานด้าน illustration และ character design  
-      โดยให้ความสำคัญกับบรรยากาศ อารมณ์ และการเล่าเรื่องผ่านภาพ
-    </p>
-
-    <p>
-      งานของเรามักเริ่มจากการทำความเข้าใจความรู้สึกและทิศทางของโปรเจกต์  
-      ก่อนจะพัฒนาออกมาเป็นภาพและตัวละครที่มีตัวตนชัดเจน
-    </p>
+    <section>
+      <h2>Profile</h2>
+      <div class="block">
+        <p>
+          ฉันเป็น visual artist ที่ทำงานอยู่ระหว่าง illustration, character design  
+          และ visual storytelling สำหรับเกมและสตูดิโอสร้างสรรค์
+        </p>
+        <p>
+          สนใจงานที่เน้นบรรยากาศ อารมณ์ และการเล่าเรื่องผ่านภาพ  
+          มากกว่าความหวือหวา
+        </p>
+        <p>
+          ทำงานได้ทั้งแบบ solo creator และร่วมทีม  
+          เข้าใจ pipeline การผลิตงานสำหรับเกม
+        </p>
+      </div>
+    </section>
 
     <!-- Skills -->
-    <h2>What We Do</h2>
-    <ul>
-      <li>Illustration & character design</li>
-      <li>Visual storytelling</li>
-      <li>Mood & atmosphere development</li>
-      <li>Concept art สำหรับงานสร้างสรรค์</li>
-    </ul>
+    <section>
+      <h2>Core Skills</h2>
+      <div class="block">
+        <span class="tag">Character Design</span>
+        <span class="tag">Illustration</span>
+        <span class="tag">Visual Storytelling</span>
+        <span class="tag">Mood & Atmosphere</span>
+        <span class="tag">Concept Art</span>
+        <span class="tag">Narrative Visual</span>
+        <span class="tag">Game Art Direction</span>
+      </div>
+    </section>
 
     <!-- Experience -->
-    <h2>Experience</h2>
-    <p>
-      CATNAP Studio ทำงานออกแบบภาพและตัวละครสำหรับ  
-      โปรเจกต์ทดลอง งานส่วนตัว และงานเชิงสร้างสรรค์
-    </p>
-
-    <p>
-      มีประสบการณ์ทำงานจาก brief  
-      ปรับงานตาม feedback  
-      และทำงานร่วมกับผู้อื่นในลักษณะทีมขนาดเล็ก
-    </p>
+    <section>
+      <h2>Experience & Practice</h2>
+      <div class="block">
+        <ul>
+          <li>ออกแบบตัวละครและภาพประกอบสำหรับโปรเจกต์ส่วนตัวและ commission</li>
+          <li>สร้าง visual identity และ mood สำหรับโลกของเกม / ตัวละคร</li>
+          <li>ทำงานแบบ iterative — ทดลอง ปรับ และพัฒนาภาพตาม narrative</li>
+          <li>คุ้นเคยกับการทำงานที่ต้องสื่อสารกับ programmer / designer</li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Working Style -->
-    <h2>Working Style</h2>
-    <ul>
-      <li>ทำงานเป็นขั้นตอน ชัดเจน และไม่เร่งงานเกินจำเป็น</li>
-      <li>สื่อสารตรงไปตรงมา เปิดรับการพูดคุย</li>
-      <li>ให้ความสำคัญกับคุณภาพและทิศทางของงาน</li>
-    </ul>
+    <section>
+      <h2>Working Style</h2>
+      <div class="block">
+        <ul>
+          <li>เริ่มงานจากอารมณ์และบรรยากาศก่อนรายละเอียด</li>
+          <li>ชอบงานที่มีพื้นที่ให้คิด ทดลอง และพัฒนา</li>
+          <li>ทำงานเงียบ มีสมาธิ แต่สื่อสารชัดเจนเมื่ออยู่ในทีม</li>
+          <li>ให้ความสำคัญกับ mood consistency มากกว่า trend</li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Availability -->
-    <h2>Availability</h2>
-    <p>
-      Currently open for selected projects.  
-      ยินดีพูดคุยรายละเอียดก่อนเริ่มงาน
-    </p>
+    <section>
+      <h2>Availability</h2>
+      <div class="block">
+        <p>
+          Open for game studio positions, freelance,  
+          และ collaborative projects ที่เน้น narrative และ visual tone
+        </p>
+      </div>
+    </section>
 
-    <div class="note">
-      CATNAP Studio เป็นสตูดิโออิสระ  
-      ดูแลและสร้างงานโดยครีเอทีฟหลักคนเดียว
-    </div>
-
-    <!-- Back -->
-    <div class="back">
-      <a href="index.html">← กลับหน้าแรก</a>
+    <div class="footer">
+      <a href="index.html">← Back to Home</a>
     </div>
 
   </main>
