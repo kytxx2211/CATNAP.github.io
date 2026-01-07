@@ -2,30 +2,61 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <title>Resume — Saki Arigato</title>
+  <title>CATNAP Studio — Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #0f0f10;
       color: #eaeaea;
       line-height: 1.9;
-      letter-spacing: 0.2px;
     }
 
     .wrap {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
       padding: 120px 24px 160px;
+    }
+
+    /* Avatar */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 32px;
+      background: #1a1a1a;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     h1 {
       font-size: 36px;
       font-weight: 600;
-      margin-bottom: 12px;
       letter-spacing: -0.03em;
+      margin: 0 0 8px;
+    }
+
+    .role {
+      font-size: 14px;
+      color: #9aa0a6;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #cfcfcf;
+      margin-bottom: 20px;
     }
 
     h2 {
@@ -36,27 +67,20 @@
       color: #ffffff;
     }
 
-    p {
-      font-size: 15px;
-      color: #c9c9c9;
-      margin-bottom: 20px;
-    }
-
-    .sub {
-      font-size: 14px;
-      color: #9aa0a6;
-      margin-bottom: 40px;
-    }
-
     ul {
       padding-left: 18px;
-      margin-bottom: 32px;
     }
 
     li {
-      margin-bottom: 12px;
-      color: #c9c9c9;
       font-size: 15px;
+      color: #cfcfcf;
+      margin-bottom: 12px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #9aa0a6;
+      margin-top: 32px;
     }
 
     .back {
@@ -78,46 +102,71 @@
 <body>
   <main class="wrap">
 
-    <h1>Saki Arigato</h1>
-    <div class="sub">
+    <!-- Avatar -->
+    <div class="avatar">
+      <img src="avatar.png" alt="CATNAP Studio Avatar">
+    </div>
+
+    <!-- Title -->
+    <h1>CATNAP Studio</h1>
+    <div class="role">
       Illustration / Character / Visual Storytelling
     </div>
 
+    <!-- Profile -->
     <p>
-      ฉันทำงานด้านภาพและตัวละคร  
-      โดยให้ความสำคัญกับบรรยากาศ อารมณ์  
-      และความรู้สึกที่งานส่งออกไปถึงคนดู
+      CATNAP Studio เป็นสตูดิโออิสระที่ทำงานด้าน illustration และ character design  
+      โดยให้ความสำคัญกับบรรยากาศ อารมณ์ และการเล่าเรื่องผ่านภาพ
     </p>
 
-    <h2>Skills</h2>
+    <p>
+      งานของเรามักเริ่มจากการทำความเข้าใจความรู้สึกและทิศทางของโปรเจกต์  
+      ก่อนจะพัฒนาออกมาเป็นภาพและตัวละครที่มีตัวตนชัดเจน
+    </p>
+
+    <!-- Skills -->
+    <h2>What We Do</h2>
     <ul>
       <li>Illustration & character design</li>
       <li>Visual storytelling</li>
-      <li>Concept development</li>
-      <li>Creative collaboration</li>
+      <li>Mood & atmosphere development</li>
+      <li>Concept art สำหรับงานสร้างสรรค์</li>
     </ul>
 
+    <!-- Experience -->
     <h2>Experience</h2>
-    <ul>
-      <li>
-        Freelance illustrator — รับงานวาดภาพและออกแบบตัวละคร  
-        สำหรับงานส่วนตัว โปรเจกต์ทดลอง และงานเชิงสร้างสรรค์
-      </li>
-    </ul>
+    <p>
+      CATNAP Studio ทำงานออกแบบภาพและตัวละครสำหรับ  
+      โปรเจกต์ทดลอง งานส่วนตัว และงานเชิงสร้างสรรค์
+    </p>
 
+    <p>
+      มีประสบการณ์ทำงานจาก brief  
+      ปรับงานตาม feedback  
+      และทำงานร่วมกับผู้อื่นในลักษณะทีมขนาดเล็ก
+    </p>
+
+    <!-- Working Style -->
     <h2>Working Style</h2>
     <ul>
-      <li>ทำงานเป็นขั้นตอน ไม่เร่ง แต่รักษาคุณภาพ</li>
-      <li>สื่อสารตรงไปตรงมา เปิดรับ feedback</li>
-      <li>ชอบงานที่มีบรรยากาศและตัวตนชัดเจน</li>
+      <li>ทำงานเป็นขั้นตอน ชัดเจน และไม่เร่งงานเกินจำเป็น</li>
+      <li>สื่อสารตรงไปตรงมา เปิดรับการพูดคุย</li>
+      <li>ให้ความสำคัญกับคุณภาพและทิศทางของงาน</li>
     </ul>
 
+    <!-- Availability -->
     <h2>Availability</h2>
     <p>
       Currently open for selected projects.  
-      ยินดีพูดคุยหากงานและทิศทางเหมาะสมกัน
+      ยินดีพูดคุยรายละเอียดก่อนเริ่มงาน
     </p>
 
+    <div class="note">
+      CATNAP Studio เป็นสตูดิโออิสระ  
+      ดูแลและสร้างงานโดยครีเอทีฟหลักคนเดียว
+    </div>
+
+    <!-- Back -->
     <div class="back">
       <a href="index.html">← กลับหน้าแรก</a>
     </div>
